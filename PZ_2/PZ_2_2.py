@@ -7,3 +7,6 @@ while True:
     except  ValueError as error:
         print('Введите целое число!!!!')
 print(f'Его превый разряд {num % 10}, его второй разряд {num // 10 % 10}')
+# 5
+num2 = int(input('Введите число '))
+print(f'Полседняя цифра введённого числа {num2%10}')
