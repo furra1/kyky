@@ -5,21 +5,32 @@
 # лежит на оси OX или OY, то вывести соответственно 1 или 2. Если точка не лежит
 # на координатных осях, то вывести 3.
 # 1
-# while True:
-#     try:
-#         num1 = int(input('Введите первое число '))
-#         num2 = int(input('Введите второе число '))
-#         num3 = int(input('Введите третье число '))
-#         break
-#     except ValueError as e:
-#         print(f'Ошибка {e}!!!!!')
-#         print('Введите')
-# if num1 > 0 and num2 < 0 and num3 < 0 or num1 < 0 and num2 > 0 and num3 < 0 or num1 < 0 and num2 < 0 and num3 > 0:
-#     print('Ровно одно из чисел положительное ')
-# else:
-#     print('Два или более чисел положительны или они все отрицательные')
+while True:
+    try:
+        num1 = int(input('Введите первое число '))
+        num2 = int(input('Введите второе число '))
+        num3 = int(input('Введите третье число '))
+        break
+    except ValueError as e:
+        print(f'Ошибка {e}!!!!!')
+        print('Введите')
+if num1 > 0 and num2 < 0 and num3 < 0 or num1 < 0 and num2 > 0 and num3 < 0 or num1 < 0 and num2 < 0 and num3 > 0:
+    print('Ровно одно из чисел положительное ')
+else:
+    print('Два или более чисел положительны или они все отрицательные')
 # 2
-x = str(input('Введите х координату '))
-y = str(input('Введите y координату '))
-koorbinata =  x +':'+ y
-print(koorbinata)
+while True:
+    try:
+        x = input('Введите х координату ')
+        y = input('Введите y координату ')
+        break
+    except ValueError as e:
+        print('Введите карректные данные')
+if x == 0 and y != 0:
+    print('1')
+elif x != 0 and y == 0:
+    print('2')
+elif x == 0 and y == 0:
+    print('0')
+else:
+    print('3')
