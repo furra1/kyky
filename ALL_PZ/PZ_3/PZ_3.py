@@ -11,7 +11,7 @@ while True:
         num2 = int(input('Введите второе число '))
         num3 = int(input('Введите третье число '))
         break
-    except ValueError as e:
+    except (TypeError, ValueError) as e:
         print(f'Ошибка {e}!!!!!')
         print('Введите')
 if num1 > 0 and num2 < 0 and num3 < 0 or num1 < 0 and num2 > 0 and num3 < 0 or num1 < 0 and num2 < 0 and num3 > 0:
@@ -24,7 +24,7 @@ while True:
         x = input('Введите х координату ')
         y = input('Введите y координату ')
         break
-    except ValueError as e:
+    except (TypeError, ValueError) as e:
         print('Введите карректные данные')
 if x == 0 and y != 0:
     print('1')
