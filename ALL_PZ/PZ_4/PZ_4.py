@@ -15,7 +15,7 @@ while True:
         print('Введите корректные данные ')
 summ = 1
 for i in range(1,k+1):
-summ += a ** i
+    summ += a ** i
 print(summ)
 
 #2
