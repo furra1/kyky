@@ -8,9 +8,13 @@
 # одну позицию (при этом AN перейдет в AN-1, AN-1 — в AN-2, . . ., A1 — в AN).
 
 
+import random
+
+
 # 1
-a = [1,2,3,4]
+a = [random.randint(1, 100) for _ in range(5)]
 revers_a = a[::-1]
+print('Элементы в порядке  A1, AN, A2, AN-1, A3, AN-2, ….')
 for i in a:
     print(i)
     for f in revers_a:
@@ -20,14 +24,11 @@ for i in a:
 
 
 # 2
-
-
-listik = [1,2,4,4,52,'123',4,1231,123432,543]
-print(len(set(listik)))
+listik = [1,2,4,4,52,123,4,1231,123432,543]
+print(f'Колво элементов в нём {len(set(listik))}')
+print(f'Отсортированый список {sorted(listik)}')
 
 
 # 3
-
-
-l = [1,2,3,4]
-print(l[1:]+l[:1])
+l = [random.randint(1, 100) for _ in range(5)]
+print(f'Сдивг в лево{l[1:]+l[:1]}')
