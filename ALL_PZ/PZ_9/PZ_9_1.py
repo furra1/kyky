@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+ПЗ № 9, Вариант 15, Задание 1
+В каких турагентствах можно одновременно приобрести туры в Италию и Канаду?
+"""
+
+voyage = {'Мексика', 'Канада', 'Израиль', 'Италия', 'США'}
+reina_tur = {'Англия', 'Япония', 'Канада', 'ЮАР'}
+raduga = {'США', 'Испания', 'Швеция', 'Австралия', 'Италия', 'Канада'}
+
+italy_canada = {'Италия', 'Канада'}
+agencies_with_both = []
+
+if italy_canada.issubset(voyage):
+    agencies_with_both.append('Вояж')
+if italy_canada.issubset(reina_tur):
+    agencies_with_both.append('РейнаТур')
+if italy_canada.issubset(raduga):
+    agencies_with_both.append('Радуга')
+
+print("Туры в Италию и Канаду можно приобрести в:", agencies_with_both)
