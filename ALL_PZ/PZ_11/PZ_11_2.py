@@ -10,4 +10,5 @@ def letters_only(text):
 
 test_string = "Hello, World! 123"
 print("Исходная строка:", test_string)
-print("Только буквы:", list(letters_only(test_string)))
+print("Только буквы:", list(letters_only(test_string))) 
+""" сделать без lista, и скомновать"""
