@@ -1,14 +1,15 @@
 # Задание: Составить генератор (yield), который выводит из строки только буквы.
 
+test_string = "Hello, Worsdfld! 123"
 
-def letters_only(text):
-    """Генератор, возвращающий только буквенные символы из строки."""
+def extract_letters(text):
+    """Функция-генератор, возвращающая только буквы."""
     for char in text:
         if char.isalpha():
             yield char
+            
+gen = extract_letters(test_string)
+result = "".join(gen)
 
-
-test_string = "Hello, World! 123"
 print("Исходная строка:", test_string)
-print("Только буквы:", list(letters_only(test_string))) 
-""" сделать без lista, и скомновать"""
+print("Только буквы:", result)
