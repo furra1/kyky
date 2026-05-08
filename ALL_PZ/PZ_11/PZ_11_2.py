@@ -1,6 +1,6 @@
 # Задание: Составить генератор (yield), который выводит из строки только буквы.
 
-test_string = "Hello, Worsdfld! 123"
+test_string = "Hello, World! 123"
 
 def extract_letters(text):
     """Функция-генератор, возвращающая только буквы."""
