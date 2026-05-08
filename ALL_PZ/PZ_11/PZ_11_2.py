@@ -3,7 +3,6 @@
 test_string = "Hello, World! 123"
 
 def extract_letters(text):
-    """Функция-генератор, возвращающая только буквы."""
     for char in text:
         if char.isalpha():
             yield char
