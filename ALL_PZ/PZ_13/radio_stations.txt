@@ -1,0 +1,8 @@
+Радиостанции Ростовской области
+http://stream.hoster.by:8081/pilotfm/audio/icecast.audio
+https://radio.ruvod.net:8000/live
+http://icecast.vgtrk.cdnvideo.ru/vestifm
+https://ep128.hostingradio.ru:8052/europaplus128.mp3
+http://nashe1.hostingradio.ru/nashe-128.mp3
+ftp://files.example.org/archive/listen.pls
+https://www.radiorecord.ru:8101/rr_320
