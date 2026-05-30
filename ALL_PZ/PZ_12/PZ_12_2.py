@@ -1,13 +1,11 @@
 # Задание (вариант 15): В матрице найти минимальный элемент в предпоследней строке.
 
-matrix = [
-    [12, 5, -3, 8],
-    [1, 9, 4, 2],
-    [6, -7, 0, 11],
-    [3, 14, -2, 5],
-]
+import random
 
-print("Исходная матрица:")
+ROWS, COLS = 4, 4
+matrix = [[random.randint(-20, 20) for _ in range(COLS)] for _ in range(ROWS)]
+
+print("Исходная матрица (сгенерирована):")
 for row in matrix:
     print(row)
 

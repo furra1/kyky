@@ -2,14 +2,12 @@
 # в новый массив. Выполнить замену элементов второй строки исходной матрицы
 # на полученные суммы.
 
-matrix = [
-    [2, -1, 4, 0],
-    [5, 3, -2, 1],
-    [7, 6, 1, 8],
-    [-3, 2, 4, 5],
-]
+import random
 
-print("Исходная матрица:")
+ROWS, COLS = 4, 4
+matrix = [[random.randint(-9, 9) for _ in range(COLS)] for _ in range(ROWS)]
+
+print("Исходная матрица (сгенерирована):")
 for row in matrix:
     print(row)
 
