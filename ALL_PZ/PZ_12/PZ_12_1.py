@@ -4,18 +4,28 @@
 
 import random
 
-ROWS, COLS = 4, 4
-matrix = [[random.randint(-9, 9) for _ in range(COLS)] for _ in range(ROWS)]
+while True:
+    try:
+        rows = int(input('Введите количество строк матрицы: '))
+        cols = int(input('Введите количество столбцов матрицы: '))
+        if rows < 2 or cols < 1:
+            print('Нужно минимум 2 строки и 1 столбец.')
+            continue
+        break
+    except ValueError:
+        print('Введите целые числа.')
 
-print("Исходная матрица (сгенерирована):")
+matrix = [[random.randint(-9, 9) for _ in range(cols)] for _ in range(rows)]
+
+print('\nИсходная матрица (сгенерирована):')
 for row in matrix:
     print(row)
 
-col_sums = [sum(matrix[i][j] for i in range(len(matrix))) for j in range(len(matrix[0]))]
-print("\nСуммы по столбцам:", col_sums)
+col_sums = [sum(matrix[i][j] for i in range(rows)) for j in range(cols)]
+print('\nСуммы по столбцам:', col_sums)
 
 matrix[1] = col_sums
 
-print("\nМатрица после замены второй строки:")
+print('\nМатрица после замены второй строки:')
 for row in matrix:
     print(row)
